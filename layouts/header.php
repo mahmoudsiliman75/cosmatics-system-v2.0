@@ -220,6 +220,13 @@
 				</a>
 			</li>
 
+      <li>
+				<a href="add-non-serg-procedure.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="hash"></i> </div>
+					<div class="side-menu__title"> Non Surgeries Procedures </div>
+				</a>
+			</li>
+
 			<li>
 				<a href="javascript:;" class="side-menu">
 					<div class="side-menu__icon"> <i class="ml-3" data-feather="pie-chart"></i> </div>
