@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap">
 	<!-- BEGIN: Google Fonts -->
 
-
 	<!-- BEGIN: CSS Assets-->
 	<link rel="stylesheet" href="dist/css/app.css" />
 	<link rel="stylesheet" href="dist/css/custom-style.css" />
@@ -315,6 +314,13 @@
 		<!-- END: SYSTEM THEMES -->
 
     <!-- START:: SWITCH LANGUAGE BUTTON -->
+    <div class="intro-x dropdown relative mr-auto  ml-2 sm:mr-6">
+      <div class="dropdown-toggle  cursor-pointer">
+				<a href="#">
+					<img src="http://technomasrsystems.com/Demos/Medical/public/dist/images/translate.svg" class="translate tooltip" title="Change The Language" style="width: 25px">
+				</a>				
+			</div>
+		</div>
     <!-- END:: SWITCH LANGUAGE BUTTON -->
 
 		<!-- BEGIN: Account Menu -->

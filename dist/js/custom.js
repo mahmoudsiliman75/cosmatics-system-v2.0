@@ -145,9 +145,6 @@ $(document).ready(function () {
     $('#procedures-title').css('display', 'block');
     $('#procedure-financ').css('display', 'block');
   });
-
-
-
   // END:: ADD NEW VISIT PAGE
 
   // START:: DOCTOR INFO PAGE
@@ -190,6 +187,39 @@ $(document).ready(function () {
     $('.delete-examination').on('click' , function() {
       $(this).parent().remove();
     });
+  });
+
+  $('#non-surg-proc').css('display', 'none');
+  $('.add-non-surg-proc').on('click', () => {
+    $('#non-surg-proc').css('display', 'block');
+  });
+  $('.non-serg-procedure-selector').on('change', function () {
+    let nonSergProcedureMarkUp = `
+    <div class="target grid grid-cols-12 gap-6 col-span-12 lg:flex-row pr-3 pl-3 -mx-5">
+
+      <div class="col-span-12 md:col-span-4">
+        <label class="text-gray-600 mb-3 text-lg">Selected Procedure Amount </label>
+        <input type="number" class="the-num input w-full border mt-2" placeholder="Amount" value="1"> 
+      </div>
+
+      <div class="col-span-12 md:col-span-4">
+        <label class="text-gray-600 mb-3 text-lg">Comments</label>
+        <input type="text" class="input w-full border mt-2" placeholder="Price">
+      </div>
+
+      <span class="delete-non-serg-procedure col-span-12 md:col-span-4 button translate-y-3 mb-3 mr-2 flex items-center justify-center bg-theme-6 text-white" style="margin-top: 35px; margin-bottom: 25px;"> Remove </span>
+
+    </div>
+    `;
+    $('.non-serg-procedure-comments-container').append(nonSergProcedureMarkUp);
+
+    $('.delete-non-serg-procedure').on('click' , function() {
+      $(this).parent().remove();
+    });
+
+    if ( $('.the-num').val().trim() < 1 ) {
+      $('.the-num').val() = 1;
+    }
   });
 
   $('.diagnosis-selector').on('change', function () {

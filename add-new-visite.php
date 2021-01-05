@@ -510,6 +510,91 @@
 </div>
 <!-- END:: DOCTOR INFO -->
 
+<!-- START:: SERVICES -->
+<div class="intro-y flex items-center justify-between pt-5 h-10">
+  <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Non Surgery Procedure</h2>
+
+  <button class="add-non-surg-proc button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-blue-800 text-white"> 
+    <i data-feather="plus" class="w-4 h-4 mr-1"></i> Add Procedure 
+  </button>
+</div>
+
+<div id="non-surg-proc" class="intro-y box px-5 pt-5 pb-5 mt-5">
+  <form>
+    <div class="grid grid-cols-12 gap-6">
+
+      <div class="col-span-12">
+        <label class="text-gray-600 mb-3 text-lg">Procedure</label>
+        <select data-placeholder="Select Procedure" data-search="true" class="non-serg-procedure-selector tail-select w-full" multiple>
+          <option value="0">Procedure 1 </option>
+          <option value="1">Procedure 2</option>
+          <option value="2">Procedure 3</option>
+          <option value="3">Procedure 4</option>
+          <option value="4">Procedure 5</option>
+          <option value="5">Procedure 6</option>
+          <option value="6">Procedure 7</option>
+        </select>
+      </div>
+
+      <div class="non-serg-procedure-comments-container col-span-12 lg:flex-row px-5 -mx-5 ">
+      </div> 
+
+    </div>
+
+    <button type="submit" class="button translate-y-3 mt-5 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+      <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Save 
+    </button>
+  </form>
+
+
+
+</div>
+
+<div class="intro-y box px-5 pt-5 pb-5 mt-5 mb-5">
+
+  <div class="clearFix"></div>
+
+  <div class="grid grid-cols-12 gap-6">
+
+    <div class="col-span-12 rounded-md flex items-center justify-between px-3 py-3 mb-2 border border-purple-300 text-theme-1 bg-red-100 dark:text-purple-600"> 
+      <div class="flex text-base text-purple-600">
+        <i data-feather="star" class="w-6 h-6 mr-2"></i> 
+        Procedure 1
+      </div>
+
+      <div class="flex">
+        <span class="text-base flex mx-1 py-2 px-2 rounded-full text-xs bg-purple-400 text-white cursor-pointer font-medium">
+          <i data-feather="hash" class="w-6 h-6"></i> : 2
+        </span> 
+
+        <span class="text-base flex mx-1 py-2 px-2 rounded-full text-xs bg-purple-400 text-white cursor-pointer font-medium">
+          <i data-feather="dollar-sign" class="w-6 h-6"></i> : 3000
+        </span> 
+      </div>
+    </div>
+
+    <div class="col-span-12 rounded-md flex items-center justify-between px-3 py-3 mb-2 border border-purple-300 text-theme-1 bg-red-100 dark:text-purple-600"> 
+      <div class="flex text-base text-purple-600">
+        <i data-feather="star" class="w-6 h-6 mr-2"></i> 
+        Procedure 5
+      </div>
+
+      <div class="flex">
+        <span class="text-base flex mx-1 py-2 px-2 rounded-full text-xs bg-purple-400 text-white cursor-pointer font-medium">
+          <i data-feather="hash" class="w-6 h-6"></i> : 4
+        </span> 
+
+        <span class="text-base flex mx-1 py-2 px-2 rounded-full text-xs bg-purple-400 text-white cursor-pointer font-medium">
+          <i data-feather="dollar-sign" class="w-6 h-6"></i> : 6000
+        </span> 
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- END:: SERVICES -->
+
 <!-- START:: INVESTIGATION -->
 <div class="intro-y flex items-center justify-between pt-5 h-10">
   <h2 class="text-lg font-medium text-gray-600 truncate mr-5">Investigations</h2>
@@ -589,6 +674,7 @@
       <tr class="bg-gray-200 dark:bg-dark-1"> 
         <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th> 
         <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Visites Dates</th> 
+        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Prcedures</th> 
         <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Visites Details</th> 
       </tr> 
     </thead> 
@@ -597,6 +683,19 @@
       <tr> 
         <td class="border-b dark:border-dark-5">1</td> 
         <td class="border-b dark:border-dark-5">24 - 12 - 2020</td> 
+        <td class="border-b dark:border-dark-5">
+          <p> Procedure 1 </p>
+          <p> Procedure 5 </p>
+        </td> 
+        <td class="border-b dark:border-dark-5">Bla Bla Bla Bla Bla Bla</td> 
+      </tr>
+
+      <tr> 
+        <td class="border-b dark:border-dark-5">2</td> 
+        <td class="border-b dark:border-dark-5">30 - 12 - 2020</td> 
+        <td class="border-b dark:border-dark-5">
+          <p> None </p>
+        </td> 
         <td class="border-b dark:border-dark-5">Bla Bla Bla Bla Bla Bla</td> 
       </tr>
 
@@ -645,7 +744,7 @@
 
 <!-- START:: PROCEDURE -->
 <button class="add-procedure button translate-y-3 mt-2 mb-3 mr-2 flex items-center justify-center bg-blue-800 text-white"> 
-  <i data-feather="plus" class="w-4 h-4 mr-1"></i> Take Procedure
+  <i data-feather="plus" class="w-4 h-4 mr-1"></i> Take Surgery Procedure
 </button>
 
 <div id="procedures-title" class="intro-y flex items-center justify-between pt-5 h-10">
