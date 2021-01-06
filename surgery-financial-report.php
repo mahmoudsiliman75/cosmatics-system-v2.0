@@ -8,9 +8,9 @@
 <div class="mt-5">
   <!-- BEGIN: Table Data -->
   <div class="intro-y box pb-3" style="z-index:1">
-    <div class="flex sm:flex-row items-center p-5 border-b border-gray-200 dark:border-dark-5">
-    
-      <div class="grid grid-cols-12 gap-6">
+    <div class="grid grid-cols-12 gap-6 p-5 border-b border-gray-200 dark:border-dark-5">
+      
+      <div class="col-span-12 grid grid-cols-12 gap-6">
         <form class="print flex mr-auto col-span-12 md:col-span-6" id="tabulator-html-filter-form">
 
           <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 mt-2">
@@ -31,6 +31,20 @@
             <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
           </button>
         </div>
+      </div>
+
+      <div class="col-span-12 grid grid-cols-12 gap-6">
+
+        <div class="col-span-6 lg:flex-row pr-3 pl-3 -mx-5">
+          <label class="text-gray-600 mb-3 text-lg">From</label>
+          <input type="date" class="input w-full border mt-2" placeholder="Patient BMI"> 
+        </div>
+
+        <div class="col-span-6 lg:flex-row pr-3 pl-3 -mx-5">
+          <label class="text-gray-600 mb-3 text-lg">To</label>
+          <input type="date" class="input w-full border mt-2" placeholder="Patient BMI"> 
+        </div>
+
       </div>
 
     </div>
