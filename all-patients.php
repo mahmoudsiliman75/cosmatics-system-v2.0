@@ -26,11 +26,11 @@
         </form>
 
         <div class="flex col-span-12 md:col-span-6">
-          <button type="submit" class="print print-tables button translate-y-3 mt-2 ml-2 flex items-center justify-center bg-theme-1 text-white"> 
+          <button type="submit" class="print print-tables button translate-y-3 mt-8 ml-2 flex items-center justify-center bg-theme-1 text-white"> 
             <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
           </button>
 
-          <a href="reservation.php" class="print button translate-y-3 mt-2 ml-2 flex items-center justify-center bg-theme-1 text-white" style="width: 190px;"> 
+          <a href="reservation.php" class="print button translate-y-3 mt-8 ml-2 flex items-center justify-center bg-theme-1 text-white" style="width: 190px;"> 
             <i data-feather="plus" class="w-4 h-4 mr-2  ml-2"></i> Add New Patient 
           </a>
         </div>

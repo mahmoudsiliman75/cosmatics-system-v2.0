@@ -26,11 +26,11 @@
         </form>
 
         <div class="flex col-span-12 md:col-span-6">
-          <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+          <button type="submit" class="print print-tables button translate-y-3 mt-8 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
             <i data-feather="printer" class="w-4 h-4 mr-2  ml-2"></i> Print 
           </button>
 
-          <button type="submit" class="print button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white w-32"> 
+          <button type="submit" class="print button translate-y-3 mt-8 mr-2 flex items-center justify-center bg-theme-1 text-white w-32"> 
             <a href="add-user.php" class="w-full"> <i data-feather="plus" class="inline w-4 h-4 mr-2  ml-2"></i> Add User </a>
           </button>
         </div>

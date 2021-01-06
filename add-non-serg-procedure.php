@@ -31,8 +31,8 @@
       </div>
 
 
-      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-2 mt-1">
-        <button type="button" class="flex justify-center button text-center w-11 h-11 bg-theme-1 text-white mx-2 w-full">
+      <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-3 mt-1">
+        <button type="button" class="flex justify-center button text-center w-11 h-11 bg-theme-1 text-white mx-2">
           <i data-feather="plus" class="w-5 h-5 text-center"></i> 
           <span>Add Procedure</span>
         </button>
