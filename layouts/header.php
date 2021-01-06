@@ -262,6 +262,13 @@
 						</a>
 					</li>
 
+          <li>
+						<a href="drugs-financial-report.php" class="side-menu">
+							<div class="side-menu__icon"> <i class="ml-3" data-feather="file-minus"></i> </div>
+							<div class="side-menu__title"> Drugs Financial Reports </div>
+						</a>
+					</li>
+
 				</ul>
 			</li>
 
