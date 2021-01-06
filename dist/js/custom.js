@@ -131,7 +131,7 @@ $(document).ready(function () {
 
   $('#visites').css('display', 'none');
   $('.toggle-visites').on('click', () => {
-    $('#visites').css('display', 'block')
+    $('#visites').toggle()
   });
 
   $('#procedure').css('display', 'none');
