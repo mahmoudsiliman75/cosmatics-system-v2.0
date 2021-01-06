@@ -12,29 +12,29 @@
 
       <div class="sm:flex-row items-center col-span-12 md:col-span-3 mt-2">
         <label class="text-gray-600 mb-3 text-lg">Procedure</label>
-        <input type="text" class="input w-full border" placeholder="Surgiry Type">
+        <input type="text" class="input w-full border" placeholder="Procedure">
       </div>
 
       <div class="sm:flex-row items-center col-span-12 md:col-span-3 mt-2">
         <label class="text-gray-600 mb-3 text-lg">Procedure Cost</label>
-        <input type="text" class="input w-full border" placeholder="Total Number">
+        <input type="text" class="input w-full border" placeholder="Procedure Cost">
       </div>
 
       <div class="sm:flex-row items-center col-span-12 md:col-span-3 mt-2">
         <label class="text-gray-600 mb-3 text-lg">Drug Cost</label>
-        <input type="text" class="input w-full border" placeholder="Total Patient Fees">
+        <input type="text" class="input w-full border" placeholder="Drug Cost">
       </div>
 
       <div class="sm:flex-row items-center col-span-12 md:col-span-3 mt-2">
         <label class="text-gray-600 mb-3 text-lg">Total Cost</label>
-        <input type="text" class="input w-full border" placeholder="Total Hospital Fees">
+        <input type="text" class="input w-full border" placeholder="Total Cost">
       </div>
 
 
       <div class="sm:flex-row items-center col-span-12 sm:col-span-12 md:col-span-2 mt-1">
         <button type="button" class="flex justify-center button text-center w-11 h-11 bg-theme-1 text-white mx-2 w-full">
           <i data-feather="plus" class="w-5 h-5 text-center"></i> 
-          <span>Add Surgiry</span>
+          <span>Add Procedure</span>
         </button>
       </div>
 

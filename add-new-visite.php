@@ -938,9 +938,9 @@
     <div class="grid grid-cols-12 gap-6">
 
       <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-        <label class="flex text-gray-600 text-lg">
+        <label class="flex flex-wrap text-gray-600 text-lg">
           Procedure Fees
-          <div class="flex items-center text-gray-700 dark:text-gray-500 ml-3"> 
+          <div class="flex items-center text-gray-700 dark:text-gray-500"> 
             <input type="checkbox" class="input border mr-2" id="offer"> 
             <label class=" cursor-pointer select-none" for="offer">With Offer</label> 
           </div>

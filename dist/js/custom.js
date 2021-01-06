@@ -216,10 +216,6 @@ $(document).ready(function () {
     $('.delete-non-serg-procedure').on('click' , function() {
       $(this).parent().remove();
     });
-
-    if ( $('.the-num').val().trim() < 1 ) {
-      $('.the-num').val() = 1;
-    }
   });
 
   $('.diagnosis-selector').on('change', function () {

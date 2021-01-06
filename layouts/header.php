@@ -272,6 +272,13 @@
 				</a>
 			</li>
 
+      <li>
+				<a href="drug-store.php" class="side-menu">
+					<div class="side-menu__icon"> <i class="ml-3" data-feather="shopping-cart"></i> </div>
+					<div class="side-menu__title"> Drugs Store </div>
+				</a>
+			</li>
+
 		</ul>
 	</nav>
 	<!-- END: Side Menu -->
