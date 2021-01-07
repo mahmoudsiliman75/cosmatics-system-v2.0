@@ -115,8 +115,8 @@ $(document).ready(function () {
     $('#basic-info').css('display', 'block');
   });
 
-  $('.remove-img').on('click', () => {
-    $('.remove-img').parent().parent().css('display', 'none');
+  $('.remove-img').on('click', function () {
+    $(this).parent().parent().css('display', 'none');
   });
 
   $('#doctor-info').css('display' , 'none');
