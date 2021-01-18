@@ -709,17 +709,45 @@
 
   <div class="grid grid-cols-12 gap-6">
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Investigations  : </span>  Investigations will be displayed here  </p>
-    </div>
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Investigations : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Investigations </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+            <th class="border-b-2 whitespace-no-wrap"> Files </th> 
+          </tr> 
+        </thead> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Results Docs : </span> Docs names will be displayed here  </p>
-    </div>
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Plan 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+            <td class="border-b dark:border-dark-5">
+              <ul>
+                <li> <a href="#"> File Name </a> </li>
+                <li> <a href="#"> File Name </a> </li>
+              </ul>
+            </td>
+          </tr> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Results  : </span>  Patient Results will be displayed here  </p>
+          <tr> 
+            <td class="border-b dark:border-dark-5">Plan 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+            <td class="border-b dark:border-dark-5">
+              <ul>
+                <li> <a href="#"> File Name </a> </li>
+                <li> <a href="#"> File Name </a> </li>
+              </ul>
+            </td>
+          </tr> 
+        </tbody> 
+      </table> 
+
     </div>
+    <!-- END:: TABLE -->
 
   </div>
 
