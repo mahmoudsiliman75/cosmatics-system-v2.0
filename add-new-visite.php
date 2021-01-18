@@ -95,9 +95,9 @@
       <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Patient History Comments : </span> Bla Bla Bla Bla Bla Bla Bla </p>
     </div>
 
-    <!-- START:: LARGE SCREENS TABLE -->
-    <div class="overflow-x-auto p-5 hidden lg:block col-span-12">
-    <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Chronic Diseases : </p> 
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Chronic Diseases : </p> 
       <table class="table home-table"> 
         <thead class="text-center"> 
           <tr class="bg-gray-200 dark:bg-dark-1"> 
@@ -120,7 +120,7 @@
       </table> 
 
     </div>
-    <!-- END:: LARGE SCREENS TABLE -->
+    <!-- END:: TABLE -->
 
   </div>
 
@@ -346,21 +346,59 @@
 
   <div class="grid grid-cols-12 gap-6">
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Complaints : </span>  Patient Complaint will be displayed here  </p>
-    </div>
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Patient Complaints : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Patient Complaints </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+          </tr> 
+        </thead> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Complaints Comments : </span>  Patient Complaint Comments will be displayed here  </p>
-    </div>
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Complaint 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Examination  : </span>  Patient Examination will be displayed here  </p>
-    </div>
+          <tr> 
+            <td class="border-b dark:border-dark-5">Complaint 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+        </tbody> 
+      </table> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Examination Comments : </span>  Patient Examination Comments will be displayed here  </p>
     </div>
+    <!-- END:: TABLE -->
+
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Examination : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Examination </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+          </tr> 
+        </thead> 
+
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Examination 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+
+          <tr> 
+            <td class="border-b dark:border-dark-5">Examination 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+        </tbody> 
+      </table> 
+
+    </div>
+    <!-- END:: TABLE -->
 
     <div div class="col-span-12 pr-3 pl-3 mt-2 -mx-5">
       <p class="text-blue-600 font-black mb-3 pb-3 text-lg"> Examination Photos: </p>
@@ -402,21 +440,59 @@
       <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Patient BMI : </span>  24.6  </p>
     </div>
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Diagnosis  : </span>  Patient Diagnosis  will be displayed here  </p>
-    </div>
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Diagnosis : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Diagnosis </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+          </tr> 
+        </thead> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Diagnosis  Comments : </span>  Patient Diagnosis  Comments will be displayed here  </p>
-    </div>
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Diagnose 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Plan  : </span>  Patient Plan  will be displayed here  </p>
-    </div>
+          <tr> 
+            <td class="border-b dark:border-dark-5">Diagnose 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+        </tbody> 
+      </table> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Plan  Comments : </span>  Patient Plan Comments will be displayed here  </p>
     </div>
+    <!-- END:: TABLE -->
+
+    <!-- START:: TABLE -->
+    <div class="overflow-x-auto col-span-12">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Plans : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Plans </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+          </tr> 
+        </thead> 
+
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Plan 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+
+          <tr> 
+            <td class="border-b dark:border-dark-5">Plan 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+        </tbody> 
+      </table> 
+
+    </div>
+    <!-- END:: TABLE -->
 
   </div>
 
