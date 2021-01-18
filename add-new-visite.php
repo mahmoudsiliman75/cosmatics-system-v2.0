@@ -87,10 +87,6 @@
       <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Family History : </span>  No </p>
     </div>
 
-    <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 lg:flex-row pr-3 pl-3 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Chronic Diseases : </span>  Chronic Diseases 1 </p>
-    </div>
-    
     <div class="col-span-12 md:col-span-6  lg:flex-row pr-3 pl-3 -mx-5">
       <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Medications : </span>  Bla Bla Bla Bla Bla Bla Bla </p>
     </div>
@@ -98,6 +94,33 @@
     <div class="col-span-12 md:col-span-6  lg:flex-row pr-3 pl-3 -mx-5">
       <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Patient History Comments : </span> Bla Bla Bla Bla Bla Bla Bla </p>
     </div>
+
+    <!-- START:: LARGE SCREENS TABLE -->
+    <div class="overflow-x-auto p-5 hidden lg:block col-span-12">
+    <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Chronic Diseases : </p> 
+      <table class="table home-table"> 
+        <thead class="text-center"> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap"> Chronic Disease </th>
+            <th class="border-b-2 whitespace-no-wrap"> Comments </th> 
+          </tr> 
+        </thead> 
+
+        <tbody class="text-center"> 
+          <tr> 
+            <td class="border-b dark:border-dark-5">Chronic Disease 1</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+
+          <tr> 
+            <td class="border-b dark:border-dark-5">Chronic Disease 2</td> 
+            <td class="border-b dark:border-dark-5">Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa Blaaaa</td>
+          </tr> 
+        </tbody> 
+      </table> 
+
+    </div>
+    <!-- END:: LARGE SCREENS TABLE -->
 
   </div>
 
