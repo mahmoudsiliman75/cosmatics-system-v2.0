@@ -860,7 +860,7 @@
       </div>
     </div>
 
-    <button type="submit" class="col-span-2 button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white"> 
+    <button type="submit" class="col-span-4 md:col-span-2 button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white"> 
       <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Save 
     </button>
 
@@ -883,63 +883,211 @@
 
   <div class="grid grid-cols-12 gap-6">
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Procedures  : </span>  Type 1 </p>
-    </div>
+    <!-- START:: LARGE SCREENS TABLE -->
+    <div class="overflow-x-auto col-span-12 hidden lg:block">
+      <p class="text-gray-600 mb-3 pb-3 text-lg text-blue-600 font-black"> Procedures  :</p> 
+      <table class="table home-table"> 
+        <thead> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap">Procedure</th> 
+            <th class="border-b-2 whitespace-no-wrap"> Procedure Date</th>
+            <th class="border-b-2 whitespace-no-wrap"> Procedure Data</th>
+            <th class="border-b-2 whitespace-no-wrap"> Operative Time</th>
+            <th class="border-b-2 whitespace-no-wrap"> Discharge Date</th>
+          </tr> 
+        </thead> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 pb-3 text-lg"> <span class="text-blue-600 font-black"> Surgery Date : </span> 30 - 12 - 2020 </p>
-    </div>
+        <tbody> 
 
-    <div div class="col-span-12 sm:col-span-12 md:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Main Surgent  : </span>  Surgent 1 </p>
+          <tr> 
+            <td class="border-b dark:border-dark-5">Type 1</td> 
+            <td class="border-b dark:border-dark-5"> 2021 - 1 - 20 </td>
+            <td class="border-b dark:border-dark-5 flex">
+
+              <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Main Surgent"> 
+                <a href="javascript:;" data-toggle="modal" data-target="#main-surgent" class="text-white">
+                  <i data-feather="user" class="w-4 h-4"></i>
+                </a> 
+              </button>
+
+              <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Assistant"> 
+                <a href="javascript:;" data-toggle="modal" data-target="#assistant" class="text-white">
+                  <i data-feather="activity" class="w-4 h-4"></i>
+                </a> 
+              </button>
+
+              <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Type Of Anesthesia"> 
+                <a href="javascript:;" data-toggle="modal" data-target="#anesthesia" class="text-white">
+                  <i data-feather="bookmark" class="w-4 h-4"></i>
+                </a> 
+              </button>
+
+            </td>
+            <td class="border-b dark:border-dark-5"> 3 Hours </td>
+            <td class="border-b dark:border-dark-5"> 2021 - 1 - 21 </td>
+          </tr> 
+
+        </tbody> 
+      </table> 
     </div>
+    <!-- END:: LARGE SCREENS TABLE -->
+
+    <!-- START:: SMALL SCREENS TABLE -->
+    <div class="overflow-x-auto col-span-12 p-5 lg:hidden"> 
+      <table class="table home-table"> 
+        <thead> 
+          <tr class="bg-gray-200 dark:bg-dark-1"> 
+            <th class="border-b-2 whitespace-no-wrap text-center">Procedure Data</th> 
+          </tr> 
+        </thead> 
+
+        <tbody>
+          <tr> 
+            <td class="border-b dark:border-dark-5">
+              <ul class="text-center">
+                <li class="mb-2"><strong>#1</strong> Type 1</li>
+                <li class="mb-2"><strong>Procedure Date:</strong> 2021 - 1 - 20 </li>
+                <li class="mb-2 flex justify-center">
+
+                  <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Main Surgent"> 
+                    <a href="javascript:;" data-toggle="modal" data-target="#main-surgent" class="text-white">
+                      <i data-feather="user" class="w-4 h-4"></i>
+                    </a> 
+                  </button>
+
+                  <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Assistant"> 
+                    <a href="javascript:;" data-toggle="modal" data-target="#assistant" class="text-white">
+                      <i data-feather="activity" class="w-4 h-4"></i>
+                    </a> 
+                  </button>
+
+                  <button class="button p-2 mx-1 flex items-center justify-center bg-theme-1 text-white" title="Type Of Anesthesia"> 
+                    <a href="javascript:;" data-toggle="modal" data-target="#anesthesia" class="text-white">
+                      <i data-feather="bookmark" class="w-4 h-4"></i>
+                    </a> 
+                  </button>
+
+                </li>
+                <li class="mb-2"><strong>Operative Time:</strong> 3 Hours </li>
+                <li class="mb-2"><strong>Discharge Date:</strong> 2021 - 1 - 21 </li>
+
+              </ul>
+            </td> 
+          </tr> 
+        </tbody> 
+      </table> 
+      <button type="submit" class="print print-tables button translate-y-3 mt-2 mr-2 flex items-center justify-center bg-theme-1 text-white col-span-4"> 
+        <i data-feather="save" class="w-4 h-4 mr-2  ml-2"></i> Print 
+      </button>
+    </div>
+    <!-- END:: SMALL SCREENS TABLE -->
 
     <div div class="col-span-12 sm:col-span-12 md:col-span-8 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Main Surgent Comments  : </span>  Main surgent comments will be displayed here  </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Assistant  : </span>  Assistant 1 </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-8 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Assistant Comments  : </span>  Assistant comments will be displayed here  </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Type Of Anesthesia  : </span>  Type 1 </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-8 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Type Of Anesthesia Comments  : </span>  Type Of Anesthesia comments will be displayed here  </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-4 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Operative Time  : </span>  3 Hours </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-8 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Operative Details : </span>  Operative Details will be displayed here  </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Discharge Date : </span>  30 - 12 - 2020 </p>
-    </div>
-
-    <div div class="col-span-12 sm:col-span-12 md:col-span-6 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Complications : </span> Yes </p>
+      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black block"> Operative Details : </span>  Operative Details will be displayed here  </p>
     </div>
 
     <div div class="col-span-12 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Complications Comments : </span> Complications Comments Operative Details will be displayed here </p>
+      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black block"> Complications Comments : </span> Complications Comments Operative Details will be displayed here If yes Is Selected </p>
     </div>
 
     <div div class="col-span-12 lg:flex-row pr-3 pl-3 mt-2 -mx-5">
-      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black"> Others : </span> Other Procedure Information Will Be Displayed Here </p>
+      <p class="text-gray-600 mb-3 text-lg"> <span class="text-blue-600 font-black block"> Others : </span> Other Procedure Information Will Be Displayed Here </p>
     </div>
 
   </div>
+
+    <!-- START:: MAIN SURGENT MODAL -->
+    <div class="modal" id="main-surgent">
+      <div class="modal__content p-10 text-center" style="width: 50%">
+        
+
+        <div class="intro-y flex items-center pt-2 h-10">
+          <h2 class="text-lg font-medium text-gray-600 truncate mb-5">Main Surgent</h2>
+        </div>
+
+        <table class="table home-table"> 
+          <thead> 
+            <tr class="bg-gray-200 dark:bg-dark-1"> 
+              <th class="border-b-2 whitespace-no-wrap">Main Surgent</th> 
+              <th class="border-b-2 whitespace-no-wrap">  Comments </th>
+            </tr> 
+          </thead> 
+
+          <tbody> 
+
+            <tr> 
+              <td class="border-b dark:border-dark-5">Surgent 1</td> 
+              <td class="border-b dark:border-dark-5"> Blaaaaaa Blaaaa Blaaaaaa </td>
+            </tr> 
+
+          </tbody> 
+        </table> 
+
+      </div>
+    </div>
+    <!-- END:: MAIN SURGENT MODAL -->
+
+    <!-- START:: ASSISTANT MODAL -->
+    <div class="modal" id="assistant">
+      <div class="modal__content p-10 text-center" style="width: 50%">
+        
+
+        <div class="intro-y flex items-center pt-2 h-10">
+          <h2 class="text-lg font-medium text-gray-600 truncate mb-5">Assistant</h2>
+        </div>
+
+        <table class="table home-table"> 
+          <thead> 
+            <tr class="bg-gray-200 dark:bg-dark-1"> 
+              <th class="border-b-2 whitespace-no-wrap">Assistant</th> 
+              <th class="border-b-2 whitespace-no-wrap">  Comments </th>
+            </tr> 
+          </thead> 
+
+          <tbody> 
+
+            <tr> 
+              <td class="border-b dark:border-dark-5">Assistant 1</td> 
+              <td class="border-b dark:border-dark-5"> Blaaaaaa Blaaaa Blaaaaaa </td>
+            </tr> 
+
+          </tbody> 
+        </table> 
+
+      </div>
+    </div>
+    <!-- END:: ASSISTANT MODAL -->
+
+    <!-- START:: ANESTHESIA MODAL -->
+    <div class="modal" id="anesthesia">
+      <div class="modal__content p-10 text-center" style="width: 50%">
+        
+
+        <div class="intro-y flex items-center pt-2 h-10">
+          <h2 class="text-lg font-medium text-gray-600 truncate mb-5">Type Of Anesthesia</h2>
+        </div>
+
+        <table class="table home-table"> 
+          <thead> 
+            <tr class="bg-gray-200 dark:bg-dark-1"> 
+              <th class="border-b-2 whitespace-no-wrap">Type Of Anesthesia</th> 
+              <th class="border-b-2 whitespace-no-wrap">  Comments </th>
+            </tr> 
+          </thead> 
+
+          <tbody> 
+
+            <tr> 
+              <td class="border-b dark:border-dark-5">Type 1</td> 
+              <td class="border-b dark:border-dark-5"> Blaaaaaa Blaaaa Blaaaaaa </td>
+            </tr> 
+
+          </tbody> 
+        </table> 
+
+      </div>
+    </div>
+    <!-- END:: ANESTHESIA MODAL -->
 
 </div>
 
