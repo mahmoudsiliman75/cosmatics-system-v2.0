@@ -12,4 +12,9 @@
     padding: 0 !important;
     margin: 0 !important;
   }
+
+  .show-in-print {
+    display: block !important;
+    overflow: hidden;
+  }
 };
